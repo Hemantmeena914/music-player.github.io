@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Music</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="musicContainer">
+      <h2 id="title">12 bje ki team mein</h2>
+      <h3 id="artist">mansingh meena </h3>
+      <div class="imgContainer">
+        <img src="./images/hem1.jpg" alt=""/>
+      </div>
+      <audio src="./music/hem1.mp3"></audio>
+      <!-- progress bar-->
+      <div class="progressConatiner" id="progressC"> 
+        <div class="durationMeter">
+          <div id="current_time">0:00</div>
+          <div id="duration">3:27</div>
+        </div>
+        <div class="progressDiv" id="progressDiv">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <!--control-->
+      <div class="mControl">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play mbtn" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
